@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK6</title>
+    <style>
+        form{
+            font-size: 22px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        body{
+            padding-left: 500px;
+            padding-top: 80px;
+        }
+        input{        
+            width: 50%;
+            height: 25px;
+            font-size: 15px;
+        }
+        img{
+            width: 25%;
+            padding-left: 120px;
+        }
+        #Login{
+            width: 51%;
+            background-color: rgb(17, 145, 17);
+            border: 1px solid white;
+            height: 30px;
+            color: aliceblue;
+            font-size: large;
+            padding: 4px;
+        }
+        #check{
+            width:20px;
+            font-size: 20px;
+        }
+        #cancel{
+            width: 10%;
+            height: 40px;
+            background-color: red;
+            border: 1px solid white;
+            color: white;
+            border-radius: 5px;
+            font-size: large;
+        }
+        span{
+            padding-left: 230px;
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    
+    <img src="female_Icon.png"/>
+    <form>
+        <label><b>Username</b></label>
+        <br/>
+        <input type="text" placeholder="Enter Username"/>
+        <br/><br/>
+        <label><b>Password</b></label>
+        <br/>
+        <input type="password" placeholder="Enter Password"/>
+        <br/><br/>
+        <button id="Login">Login</button>
+        <br/><br/>
+        <input  id="check" type="checkbox" name="remember">Remember me
+        <br/><br/>
+        <div id="as">
+            <button id="cancel">Cancel</button><span>Forgot <a href="#">Password?</a></span>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TASK2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .box {
+            border: 2px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .inner-box {
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .vertical-nav {
+            width: 200px;
+            background-color: lightblue;
+        }
+        .vertical-nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .vertical-nav li {
+            margin: 10px 0;
+        }
+        .vertical-nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+            padding: 5px;
+        }
+        .vertical-nav a:hover {
+            background-color: orange;
+            color: white;
+        }
+        .horizontal-nav {
+            width: 520px;
+            background-color: lightgray;
+        }
+        .horizontal-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .horizontal-nav li {
+            margin: 0 15px;
+        }
+        .horizontal-nav a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            display: block;
+            padding: 5px;
+        }
+        .horizontal-nav a:hover {
+            background-color: grey;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Vertical Navigation Bar</h2>
+        <div class="box">
+            <div class="inner-box vertical-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">Bootstrap</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Horizontal Navigation Bar</h2>
+        <div class="box">
+            <div class="inner-box horizontal-nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Java</a></li>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
